@@ -1,0 +1,61 @@
+<!-- EECS1012(TA) - very important that name and value are correct for all inputs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Mad Coders </title>
+  <meta charset="utf-8">
+  <link href="lab3_ex1.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+  <!-- EECS1012(TA) one task is to have the paragraph as shown below.  The CSS has the following info
+  #top { text-align: right; }
+  #login { background-color: black;
+           color: white;
+           font-size: 10pt;
+           font-family: monospace;
+           padding: 5px;
+         }
+  -->
+  <p id="top"> Already have an account? <a href="https://moodle.info.yorku.ca/"><span id="login">Log in</span></a>
+
+  <!-- EECS1012(TA): There is a main that wraps the rest.  It has the following css.
+  #main {
+    width: 250px;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px black solid;
+  }
+  Encourge the student to have a context selector - this means all paragraphs within #main
+  #main p { margin: 2px;}
+  -->
+  <div id="main">
+    <!-- EECS1012(TA): form should call this program -->
+    <form action="https://www.eecs.yorku.ca/~mbrown/EECS1012/testForm.php" method="get">
+      <!-- EECS1012(TA): I'm OK if they use a few simple inline styles -->
+      <p style="text-align: center;"> <img src="logo.png" alt="logo"></p>
+      <!-- EECS1012(TA):  All input types have the following CSS - the submit button is different
+      input[type="text"], input[type="email"],  input[type="password"]
+      {
+        width: 240px;
+      }
+
+      input[type="submit"]
+      {
+        background-color: black;
+        color: white;
+        width: 240px;
+        padding: 5px;
+      }
+    -->
+      <p> Name: </p>
+      <p> <input type="text" name="name"> </p>
+      <p> Email: </p>
+      <p> <input type="email" name="email"> </p>
+      <p> Password: </p>
+      <p> <input type="password" name="password"> <br> <br></p>
+      <p> <input type="checkbox" value="yes" name="agreed"> I agree to the terms and conditions?</p>
+      <p> <input type="submit" value="Create my account"></p>
+    </form>
+  </div>
+</body>
+</html>

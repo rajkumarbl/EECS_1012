@@ -1,0 +1,57 @@
+/* Exercise #4
+*/
+
+body {
+	/* V4 - font added */
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-image: url("images/background.gif");
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#container {
+	background-color: white;
+	/* V4: added this exercise */
+	border: 10px white solid;
+}
+
+.date {
+	/* V4: added this exercise */
+	border-bottom-style: dashed;
+	border-bottom-width: 2px;
+}
+
+.entry {
+	/* V4: added this exercise */
+	border: 4px rgb(168, 213, 255) solid;
+	padding: 5px;
+	background-color: rgb(196, 226, 255);
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+.entry img {
+	float: right;
+	margin-left: 5px;
+}
+
+#header {
+	/* V4: added this exercise */
+	background-color: rgb(168, 213, 255);
+	text-align: right;
+	padding-right: 10px;
+}
+
+#header h2 {
+	/* V4: added this exercise */
+	font-size: 1.1 em;
+}
+
+#footer {
+	text-align: center;
+	padding-right: 10px;
+}
+
+p {
+	border: none;
+}

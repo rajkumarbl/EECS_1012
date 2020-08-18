@@ -1,0 +1,45 @@
+/* body has a background and font style */
+body {
+  background: url("background.png");
+  font-family: sans-serif;
+}
+
+#main {  /* main div */
+  background: #EEEEEE;
+  border: 5px solid #999999;
+  padding: 5px;
+  width: 400px; /* note that width is fixed */
+  margin: auto; /* auto makes it centered */
+  overflow: hidden;
+}
+#top p {        /* This is used for the top field, makes all <p> centered */
+  text-align: center;
+}
+fieldset    /* set all fieldsets to have a 10px top margin */
+{
+  margin-top: 10px;
+}
+img {       /* image needs to have height fixed, ok if this is done in the HTML */
+  height: 250px;
+  border: 3px solid black;
+}
+.box      /* this is used for the style about the red, gree, blue, etc */
+{
+  color: white;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+}
+
+input /* all input is right aligned and monospace*/
+{
+  font-family: monospace;
+  text-align: right;
+}
+
+.ccdigit {  /* for credit card numbers - using 4em width */
+  width: 4em;
+}
+.monthdigit { /* for date numbers */
+  width: 2em;
+}

@@ -1,0 +1,127 @@
+<!-- EECS1012 (TAs) - very important that name and value are correct for all inputs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Nerd Shirt </title>
+    <link href="lab3_ex2.css" type="text/css" rel="stylesheet">
+  <meta charset="utf-8">
+</head>
+<body>
+<!-- EECS1012 - students code starts here -->
+<!-- Two actions - first try with this one to help debug. Then use:
+   https://www.eecs.yorku.ca/~mbrown/EECS1012/buyShirt.php -->
+<form action="https://www.eecs.yorku.ca/~mbrown/EECS1012/testForm.php" method="get">
+<!-- EECS1012: Everything is wrapped in a div.
+#main {
+  background: #EEEEEE;
+  border: 5px solid #999999;
+  padding: 5px;
+  width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+-->
+<div id="main">
+<!--EECS fieldset has style
+fieldset
+{
+  margin-top: 10px;
+}
+-->
+<!-- EECS all paragraphis in top are centered
+#top p {
+  text-align: center;
+}
+-->
+<fieldset id="top">
+    <legend>Select Shirt</legend>
+    <!-- EECS1012(TA) - img has
+      img {
+        height: 250px;
+        border: 3px solid black;
+      }
+    -->
+    <p>  <img src="tshirt.png" alt="tshirt" height="300"> </p>
+    <p>
+          <!-- EECS1012(TA) - I use inline colors here.  Note the use of <label> </labeL> to associate
+               the text with the radio input.
+             css
+             .box
+             {
+               color: white;
+               width: 30px;
+               height: 30px;
+               border: 1px solid black;
+             }
+           -->
+          <label>
+              <input type="radio" name="color" value="White" checked>
+              <span class="box" style="background-color:white; color:black;"> White </span>
+            </label>
+          <label>
+            <input type="radio" name="color" value="Red" checked>
+            <span class="box" style="background-color:red;"> Red </span>
+          </label>
+          <label>
+            <input type="radio" name="color" value="Blue" checked>
+            <span class="box" style="background-color:blue;"> Blue </span>
+          </label>
+          <label>
+              <input type="radio" name="color" value="green">
+              <span class="box" style="background-color:green;"> Green </span>
+          </label>
+      <p> Size
+        <!--EECS1012(TA)- simple dropdown box -->
+        <select name="size">
+          <option> Small </option>
+          <option> Medium </option>
+          <option> Large </option>
+          <option> X-Large </option>
+        </select>
+  </fieldset>
+<!-- EECS1012(TA): Next fieldset -->
+<fieldset>
+  <legend>Payment</legend>
+  <!-- EECS1012(TA): each input has the following CSS
+  input
+  {
+    font-family: monospace;
+    text-align: right;
+  }
+  -->
+
+  <!-- EECS1012(TA) make sure the name and values are correct -->
+  <p>
+	<input type="radio" name="cardType" value="vs" checked="checked"> Visa
+	<input type="radio" name="cardType" value="mc"> 	MasterCard
+	<input type="radio" name="cardType" value="am"> 	American Express </p>
+  <hr>
+  <!-- EECS1012(TA):
+  .ccdigit {
+    width: 4em;
+  }
+  -->
+  <p> Card number
+      <input class="ccdigit" type="text" maxlength="4" name="cc1">-
+      <input class="ccdigit" type="text" maxlength="4" name="cc2">-
+      <input class="ccdigit" type="text" maxlength="4" name="cc3">-
+      <input class="ccdigit" type="text" maxlength="4" name="cc4">
+  </p>
+  <hr>
+  <!-- EECS1012(TA): CSS
+  .monthdigit {
+    width: 2em;
+  }
+-->
+
+  <p> Expiration: Month (MM) <input class="monthdigit" type="text" maxlength="2" name="month">
+      Year (YY) <input class="monthdigit" type="text" maxlength="2" name="year">
+  </p>
+</fieldset>
+<!-- EECS1012(TA) - notice the inline styles here.  floating left and right.  Also, style on inputs -->
+<p style="float:left;"> Place Order <input style="background-color: black; color: white; padding:5px;" type="submit"> </p>
+<p style="float:right;"> Reset fields <input style="padding:5px;" type="reset"> </p>
+</div>
+</form>
+</body>
+</html>

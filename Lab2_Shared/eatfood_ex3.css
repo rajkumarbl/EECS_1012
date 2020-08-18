@@ -1,0 +1,42 @@
+/* Exercise #3
+*/
+
+body {
+	background-image: url("images/background.gif");
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#container {
+	background-color: white;
+	border: 5px green solid;
+}
+
+.date {
+	border: 5px purple solid;
+}
+
+.entry {
+	border: 5px blue solid;
+	padding: 5px;
+	background-color: rgb(196, 226, 255);
+	margin-top: 10px;
+  /* added in this exercise */
+	overflow: hidden;
+}
+
+/* V3: added this exercise */
+.entry img {
+	float: right;
+	margin-left: 5px;
+}
+
+#header {
+	/* V3: added this exercise */
+	text-align: right;
+	border: 5px red solid;
+}
+
+#header h2 {
+	border: 5px orange solid;
+}
